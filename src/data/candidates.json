@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "post": "Banquier",
+    "degree": "Bac +2",
+    "experience": "1 an"
+  },
+  {
+    "id": 2,
+    "post": "Infirmière",
+    "degree": "Bac +3",
+    "experience": "1 an"
+  },
+  {
+    "id": 3,
+    "post": "Developpeur",
+    "degree": "Bac +5",
+    "experience": "2 an"
+  },
+  {
+    "id": 4,
+    "post": "Chauffeur",
+    "degree": "Bac",
+    "experience": "1 an"
+  },
+  {
+    "id": 5,
+    "post": "Cuisinier",
+    "degree": "Bac +3",
+    "experience": "1 an"
+  },
+  {
+    "id": 6,
+    "post": "Agronome",
+    "degree": "Bac +5",
+    "experience": "2 an"
+  }
+]

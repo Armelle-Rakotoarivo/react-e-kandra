@@ -1,38 +1,213 @@
-.App {
+@font-face {
+  font-family: Bitter;
+  src: url('./assets/fonts/Bitter-Medium.ttf') format(truetype);
+}
+* {
+  font-family: Bitter;
+}
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.menu li {
+  list-style-type: none;
+  display: inline-block;
+}
+.menu li a {
+  color: dodgerblue;
+  margin-left: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+.link {
+  margin-top: 1.5%;
+}
+.logo {
+  color: #f7007f;
+  padding-left: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+.menu .box {
+  border: 1px solid #ffff;
   text-align: center;
+  padding-right: 20px;
+  transform: skew(-10deg);
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  cursor: pointer;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blue {
+  background-color: blue;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.red {
+  background-color: red;
+}
+.green {
+  background-color: #3ce52d;
+}
+.postTitle {
+  font-size: 30px;
+}
+.postOwner {
+  font-size: 20px;
+  color: #db0071;
+}
+.contractType {
+  font-size: 10px;
+}
+.card {
+  padding: '2%';
+}
+.star-five {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: #db0071;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #db0071;
+  border-left: 100px solid transparent;
+  transform: rotate(35deg);
+}
+.star-five:before {
+  border-bottom: 80px solid #db0071;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  transform: rotate(-35deg);
+}
+.star-five:after {
+  position: absolute;
+  display: block;
+  color: #db0071;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid #db0071;
+  border-left: 100px solid transparent;
+  transform: rotate(-70deg);
+  content: '';
+}
+.post-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-image: url('./assets/background.png');
+}
+.post-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 5%;
+}
+.search {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 2%;
+}
+.banner {
+  margin-top: 10%;
+  text-align: center;
+  background-image: url('./assets/background.png');
+}
+.secteur {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 0.1%;
+}
+.secteur-title {
+  font-size: 30px;
+  color: #db0071;
+}
+.footer-container {
+  background-color: #e3e2e2;
+  display: flex;
+  justify-content: space-around;
+}
+.shortcut {
+  margin-left: 1%;
+}
+.card-container {
+  display: flex;
+  width: 90%;
+  margin: 1.5%;
+  padding: 2%;
+  cursor: pointer;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #db0071;
+  border-radius: 50%;
+  margin-right: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.circle-text {
+  text-align: center;
+  padding-top: 35%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-link {
+  display: flex;
+  flex-direction: column;
+}
+.icon {
+  margin-left: 32%;
+}
+footer {
+  background-color: #707070;
+  display: flex !important;
+  justify-content: space-between;
+  color: white;
+}
+.publish {
+  color: #3ce52d;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 32%;
+}
+.background {
+  background: #db0071;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: 300;
+  background-image: url('./assets/background.png');
+}
+.start-button {
+  width: 20%;
+  height: 10%;
+  color: white !important;
+  background: #db0071 !important;
+  font-size: large !important;
+}
+.sidebar {
+  width: 45%;
+  color: white;
+  background: #f7007f !important;
+  padding: 2%;
+}
+.MuiPaginationItem-page.Mui-selected {
+  background-color: #db0071 !important;
+}
+.pagination {
+  justify-content: center;
+}
+.pagenumber {
+  margin-right: 6% !important;
+  padding-top: 4px;
 }
